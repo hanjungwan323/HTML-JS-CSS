@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인 계산 프로그램</title>
+    <script>
+function ShowPrice() {
+    var original_price = document.querySelector("#oprice").value;
+    var salerate = document.querySelector("#srate").value;
+
+    var save_price = original_price * (salerate / 100);
+    var result_price = original_price - save_price;
+
+    document.querySelector("#showResult").innerHTML = "상품의 원래 가격은" + original_price + "원이고, 할인율은 " + salerate + "% 입니다." + "즉 할인 가격은 <strong>" + result_price + "</strong>입니다.";
+}
+
+function text_color() {
+    var start_answer = confirm("글자색을 바꾸시겠습니까?");
+
+    if (start_answer == true) {
+        var x = document.getElementById("change_color");
+        x.style.color = "blue";
+    }
+    else if (start_answer != true) {
+        alert("취소하였습니다.");
+    }
+}
+</script>
+</head>
+
+<body>
+
+    <div id="oprice_css">
+        <input type="text" placeholder="정가" id="oprice">
+    </div>
+
+    <input type="text" placeholder="할인율" id="srate">
+    <button onclick="ShowPrice();">계산</button>
+    <p id="showResult">계산해주세요!</p>
+
+    <button onclick="text_color();">글자색 바꾸기</button>
+    <p id="change_color">
+        글자색을 바꿔보세요!
+    </p>
+</body>
+
+</html>
