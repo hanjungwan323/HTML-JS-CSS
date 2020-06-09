@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication table</title>
+    <script>
+        function confirm_value() {
+            var Drainage_Check = document.querySelector("#Drainage").value;
+
+            var Drainage_Value = document.querySelector("#Drainage_value").value;
+
+            var last_check = Drainage_Value % Drainage_Check;
+
+            if (last_check == 0) {
+                document.querySelector("#show_result").innerHTML = Drainage_Value + "는 " + Drainage_Check + "의 배수가 <strong>맞습니다.</strong>";
+            } else if (last_check != 0) {
+                document.querySelector("#show_result").innerHTML = Drainage_Value + "는 " + Drainage_Check + "의 배수가 <strong>아닙니다.</strong>";
+            }
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'Recipekorea';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            background-color: gainsboro;
+        }
+        
+        #show_result {
+            font-family: recipekorea;
+            font-size: 15px;
+        }
+        
+        #bt_css {
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            background-color: gray;
+            width: 100px;
+            height: 50px;
+        }
+        
+        #bt_css:hover {
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid gainsboro;
+            background-color: gainsboro;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>배수 검사기</h1>
+    </center>
+
+    <center>
+        <input type="number" id="Drainage" placeholder="배수를 입력해주세요.">
+    </center>
+
+    <center>
+        <input type="number" id="Drainage_value" placeholder="값을 입력해주세요.">
+    </center>
+
+    <center>
+        <button onclick="confirm_value();" id="bt_css">체크</button>
+    </center>
+
+    <center>
+        <p id="show_result"></p>
+    </center>
+</body>
+
+</html>
