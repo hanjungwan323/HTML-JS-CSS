@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('back.jpg');
+            background-size: cover;
+        }
+
+        #logo {
+            color: white;
+            font-size: 200px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none solid;
+            width: 100%;
+            height: 300px;
+        }
+
+        #img_naver {
+            margin-left: 1800px;
+            margin-top: 50px;
+        }
+
+        #img_facebook {
+            margin-left: 1700px;
+            margin-top: -52px;
+        }
+
+        #page1 {
+            border: none solid;
+            width: 1000px;
+            height: 500px;
+            background-color: gainsboro;
+            text-align: left;
+            padding: 20px;
+            font-size: 25px;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="logo">Han_Blog</div>
+    </center>
+
+    <div id="img_naver">
+        <a href="https://www.naver.com/">
+            <img src="001.jpg" width="50px" height="50px">
+        </a>
+    </div>
+
+    <div id="img_facebook">
+        <a href="https://www.facebook.com/">
+            <img src="002.jpg" width="50px" height="50px">
+        </a>
+    </div>
+    <center>
+        <div id="page1">
+            <h2>●C언어 이야기</h2>
+            <h4>C언어는 1972년 벨 연구소에서 데니스 리치가 만들었다.<br>
+                C언어는 하드웨어를 만드는 데 쓰인다.(아두이노, 라즈베리파이, 등)
+                또한 컴퓨터의 특정 부분을 수정하는 데에도 쓰인다.<br>
+                어디서든 정말 유용하게 쓰이는 언어이기도
+                하지만 요즘 나오는 Python과 같은 신세대(?) 언어 때문에
+                많이 줄어드는 추세이다.<mark>(정확하지 않음)</mark>
+            </h4>
+        </div>
+    </center>
+    <br>
+    <center>
+        <div id="page1">
+            <h2>●C언어 문법</h2>
+            <h4>이 블로그의 작자의 생각이지만
+                다른 프로그래밍 언어들이 C언어의 문법을 따라가는것 같다.
+                대충 C언어의 문법이 코드를 정리하기 편해서 그런것 같다.
+                (C언어가 다른 언어의 문법을 따라간것일수도..)<br>
+                -----------------------------------------------------------------------------------------------<br>
+                C언어의 문법<br>
+                #include<stdio.h> //표준라이브러리 헤더파일을 포함한다.<br>
+                <br>
+                int main(){
+                    <br>
+                    <br>
+                }
+                </h4>
+        </div>
+    </center>
+    <br>
+    <center>
+        <div id="page1">
+            <h2>●Blog작자가 생각하는 C언어</h2>
+            <h4>C언어는 처음 프로그래밍을 입문하시는 분들께 추천드릴수 있을거 같습니다.<br>
+                하지만 C언어는 호불호가 많이 갈리는 언어입니다.<br>
+                왜냐하면 C언어를 파면 팔수록 점점 어려워지고 이해하기 힘들기 때문입니다.<br>
+                모든 언어들이 힘든건 맞지만 이상하게(?) C언어를 더 어려워합니다.<br>
+                사람들은 입문으로 python을 추천하지만 작자는 역시 C언어를 추천합니다.<br>
+                비슷한 문법을 가진 언어가 많기 때문입니다.<br>
+                하지만 너무 깊게 파고 들려면 python을 추천합니다.<br>
+                C언어는 문법만 얇게 파고 다른 언어를 했으면 좋겠습니다.<br>
+            </h4>
+        </div>
+    </center>
+    <left><h1 style="color: white;">읽어주셔서감사합니다.<br>
+        다음 이야기--><a href="" style="color: white;">here</a>
+    </h1>
+    </left>
+</body>
+
+</html>
