@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 계산 프로그램</title>
+    <script>
+        function age_Calculator() {
+            var year = prompt("현재 년도를 입력해주세요");
+            var ago_year = prompt("태어난 년도를 입력해주세요.");
+            var total;
+
+            total = year - ago_year + 1;
+
+            document.querySelector("#age").innerHTML = "현재 당신의 나이는 <strong>" + total + "살</strong> 입니다.";
+        }
+    </script>
+    <style>
+        #age_bt_css {
+            width: 120px;
+            height: 50px;
+            border: 1px dotted gray;
+            background-color: gray;
+            border-radius: 10px;
+        }
+        
+        #age_bt_css:hover {
+            width: 120px;
+            height: 50px;
+            border: 1px dotted gainsboro;
+            background-color: gainsboro;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>
+            당신의 나이를 입력해주세요.
+        </h1>
+    </center>
+
+    <center>
+        <input type="button" id="age_bt_css" value="시작!" onclick="age_Calculator();">
+    </center>
+
+    <center>
+        <p id="age"></p>
+    </center>
+</body>
+
+</html>
